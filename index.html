@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRUPO IVASKO</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="overlay">
+        <div class="loader">
+        </div>
+    </div>
+
+    <header>
+
+        <img src="./img/logo.png" class="logo" alt="">
+        <ul>
+            <li><a class="link" href="./index.html">INÍCIO</a></li>
+            <li><a class="link" href="./sobre.html">EMPRESAS</a></li>
+            <li><a class="link" href="">INTRANET</a></li>
+            <li><a class="link" href="">TRABALHE CONOSCO</a></li>
+            <li><a class="link" href="">CONTATO</a></li>
+            <li><a class="link" href="./noticia.html">NOTÍCIAS</a></li>
+        </ul>
+    </header>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img
+                    src="./carousel/image00002.jpeg"
+                    alt=""></div>
+            <div class="swiper-slide"><img
+                    src="./carousel/image00004.jpeg"
+                    alt=""></div>
+            <div class="swiper-slide"><img
+                    src="./carousel/image00005.jpeg"
+                    alt=""></div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <section>
+        <div class="conteudo-principal">
+            <h1>NOSSAS ÁREAS DE ATUAÇÃO</h1>
+            <div class="conteudo-texto">
+                <img class="imagem-texto" src="./carousel/image00002.jpeg" alt="">
+                <div>
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere eum odio impedit sunt porro?
+                        Accusamus enim doloribus sequi ipsa culpa odio ducimus dolorum? Impedit porro inventore fuga
+                        alias ad accusamus?</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h1>NOSSAS MARCAS</h1>
+        <div class="global-card">
+            <div class="conteudo-card">
+                <img src="./img/supermercado.png" class="card" alt="">
+                <a target="_blank" href="http://www.marianoatacadista.com.br/"><img src="./img/mariano.png" class="card"
+                        alt=""></a>
+                <img src="./img/rotta400.png" class="card-1" alt="">
+            </div>
+
+            <div class="conteudo-card">
+                <img src="./img/new.png" class="card" alt="">
+                <img src="./img/ivaskotch.png" class="card" alt="">
+                <img src="./img/levegas.png" class="card" alt="">
+            </div>
+
+            <div class="conteudo-card">
+                <img src="./img/caminhao.png" class="card-1" alt="">
+                <img src="./img/eci.png" class="card" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="global-footer">
+            <div class="footer">
+                <a class="link-1" href="">QUEM SOMOS</a>
+                <a class="link-1" href="">EMPRESAS</a>
+                <a class="link-1" href="">INTRANET</a>
+                <a class="link-1" href="">TRABALHE CONOSCO</a>
+                <a class="link-1" href="">CONTATO</a>
+                <a class="link-1" href="">NOTÍCIAS</a>
+            </div>
+
+            <div class="conteudo-footer">
+                <img src="./img/logo.png" class="logo" alt="">
+                <div class="conteudo-footer-1">
+                    <img src="./image/facebook.png" class="icon" alt="">
+                    <img src="./image/instagram.png" class="icon" alt="">
+                    <img src="./image/linkedin.png" class="icon" alt="">
+                    <img src="./image/whatsapp.png" class="icon" alt="">
+                </div>
+                <h5>©2022 GRUPO IVASKO.Todos os direitos reservados.</h5>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./loading.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</body>
+
+</html>
